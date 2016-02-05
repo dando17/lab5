@@ -9,6 +9,12 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
+	$('.friend h3').click(function() {
+		event.preventDefault();
+		var name = $(this).text();
+		$(this).text(anagrammedName(name));
+	})
+
 	console.log("Javascript connected!");
 }
 
